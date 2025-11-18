@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #1E201E;
+ }
+
+.gradient-text {
+    /* background: linear-gradient(90deg, #6366f1, #8b5cf6); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:rgb(237, 154, 237);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.nav-link:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8b5cf6;
+    transition: width .3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.skill-icon {
+    transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8b5cf6;
+    border: 4px solid #e9d5ff;
+}
